@@ -21,6 +21,7 @@ class BufferApp {
     }
 
     public async closeConnection(): Promise<void> {
+        // Need to close browser connection
         await this._browser.close()
     }
 
