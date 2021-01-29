@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "rootDir": "src",
+        "outDir": "dist",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "lib": [
+            "es5",
+            "es6",
+            "es7",
+            "dom"
+        ],
+        "esModuleInterop": true,
+        "plugins": [
+            {
+                "transform": "ts-auto-mock/transformer",
+                "cacheBetweenTests": false
+            }
+        ]
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.test.ts",
+        "**/*.jest.ts"
+    ]
+}
